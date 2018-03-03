@@ -1,0 +1,6 @@
+*.log
+*-stamp
+*.substvars
+*.debhelper
+files
+ethminer-opencl

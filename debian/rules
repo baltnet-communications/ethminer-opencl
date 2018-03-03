@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+VER=$(shell dpkg-parsechangelog --show-field Version)
+REL=$(shell lsb_release -rsu || lsb_release -rs)
+CDN=$(shell lsb_release -csu || lsb_release -cs)
+
+%:
+	dh $@ --buildsystem=cmake --builddirectory=build --sourcedirectory=src
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DETHASHCUDA=OFF -DETHASHCL=ON
+
+override_dh_gencontrol:
+	dh_gencontrol -- -v$(VER)+$(REL)-$(CDN)

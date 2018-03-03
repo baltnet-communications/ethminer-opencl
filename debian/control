@@ -1,0 +1,16 @@
+Source: ethminer-opencl
+Section: misc
+Priority: optional
+Maintainer: Baltnet Communications <info@baltnet.ee>
+Build-Depends: debhelper (>=10)
+Standards-Version: 3.9.6
+Homepage: https://github.com/ethereum-mining/ethminer
+Vcs-Git: git@github.com:baltnet-communications/ethminer.git
+Vcs-Browser: https://github.com/baltnet-communications/ethminer
+
+Package: ethminer-opencl
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: clayminer-xmr, clayminer-dual, sgminer
+Replaces: clayminer-xmr, clayminer-dual, sgminer
+Description: Ethereum miner with OpenCL support

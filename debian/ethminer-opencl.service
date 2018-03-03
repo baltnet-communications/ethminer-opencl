@@ -1,0 +1,10 @@
+[Unit]
+Description=Ethereum miner with OpenCL support
+After=network-online.target
+
+[Service]
+Environment='OPTS='
+ExecStart=/opt/ethminer-opencl/ethminer $OPTS
+
+[Install]
+WantedBy=multi-user.target
