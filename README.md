@@ -9,7 +9,11 @@ This project packages famous [ethminer](https://github.com/ethereum-mining/ethmi
 5. For release builds, run `dpkg-buildpackage` without any arguments.
 
 # Installation
-Please visit http://pkg.baltnet.net for instructions how to configure Baltnet repository and install this package.
+Please visit http://pkg.baltnet.net for instructions how to configure Baltnet repository. To install the package, run following command:
+
+```
+	$ sudo apt install ethminer-opencl
+```
 
 # Configuration
 There is no default working configuration which a daemon can use. Therefore, a custom configuration must be created manually after installation.
