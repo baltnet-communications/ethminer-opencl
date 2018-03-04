@@ -1,3 +1,9 @@
+ethminer-opencl (1.0.1) stable; urgency=medium
+
+  * Use cryptominer-daemon as a virtual package to detect conflicts with miners.
+
+ -- The Ranger <ranger@risk.ee>  Sun, 04 Mar 2018 14:53:25 +0200
+
 ethminer-opencl (1.0.0) stable; urgency=medium
 
   * Initial release

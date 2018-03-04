@@ -11,6 +11,7 @@ Vcs-Browser: https://github.com/baltnet-communications/ethminer
 Package: ethminer-opencl
 Architecture: amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}, amdgpu-pro, amdgpu-pro-dkms
-Conflicts: clayminer-xmr, clayminer-dual, sgminer
-Replaces: clayminer-xmr, clayminer-dual, sgminer
+Conflicts: cryptominer-daemon
+Replaces: cryptominer-daemon
+Provides: cryptominer-daemon
 Description: Ethereum miner with OpenCL support
