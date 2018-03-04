@@ -1,6 +1,8 @@
 # About This Project
 This project packages famous [ethminer](https://github.com/ethereum-mining/ethminer) into easily distributable Debian package. This helps to maintain and update the binary.
 
+**Note, that this package has OpenCL support only**. For CUDA version, see [ethminer-cuda repository](https://github.com/baltnet-communications/ethminer-cuda).
+
 # Building the Package
 1. After cloning the repository, run `git submodule update --init --recursive` to check out all git sub-modules.
 2. To update change log file, run `dch -i` and make the edits.
@@ -12,7 +14,7 @@ This project packages famous [ethminer](https://github.com/ethereum-mining/ethmi
 Please visit http://pkg.baltnet.net for instructions how to configure Baltnet repository. To install the package, run following command:
 
 ```
-	$ sudo apt install ethminer-opencl
+$ sudo apt install ethminer-opencl
 ```
 
 # Configuration
